@@ -1,0 +1,18 @@
+﻿大肥鱼 · 备份与恢复
+
+【手动备份】
+  powershell -NoProfile -ExecutionPolicy Bypass -File <你的目录>\qq-bridge\tools\backup.ps1
+
+【校验备份】（默认抽查 100 个文件，-Full 全量）
+  powershell -NoProfile -ExecutionPolicy Bypass -File <你的目录>\qq-bridge\tools\verify-backup.ps1
+  powershell -NoProfile -ExecutionPolicy Bypass -File <你的目录>\qq-bridge\tools\verify-backup.ps1 -Full
+
+【恢复备份】（会先自动备份当前再覆盖）
+  powershell -NoProfile -ExecutionPolicy Bypass -File <你的目录>\qq-bridge\tools\restore-backup.ps1
+
+【自动备份】
+  Windows 计划任务 "大肥鱼-备份"，每 8 小时（00:00 / 08:00 / 16:00）
+  保留 30 天；每月 1 号那份永久保留
+
+【包含内容】
+  state/  memory/  roles/  data/  config.json  + MANIFEST.json（逐文件 sha256）

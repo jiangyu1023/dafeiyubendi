@@ -1,0 +1,398 @@
+{
+  "dsh": {
+    "baseUrl": "http://127.0.0.1:5099",
+    "provider": "deepseek-official",
+    "model": "deepseek-flash",
+    "reasoningEffort": "max",
+    "authToken": "",
+    "authHeader": "authorization",
+    "authPrefix": "Bearer",
+    "allowRemote": false
+  },
+  "role": {
+    "maxInjectChars": 8000
+  },
+  "snowluma": {
+    "wsUrl": "ws://127.0.0.1:3001",
+    "httpUrl": "http://127.0.0.1:3000",
+    "accessToken": "",
+    "followDiscoveredEndpoint": true,
+    "silenceWarnMs": 600000,
+    "launcherPath": "",
+    "homeDir": ""
+  },
+  "ownerQQ": "你的QQ号",
+  "sessionCwd": "",
+  "agentPreset": "qq-chat",
+  "workspaceTitle": "QQ 聊天",
+  "allow": {
+    "groups": [],
+    "private": []
+  },
+  "deny": {
+    "groups": [],
+    "private": []
+  },
+  "allowAllWhenEmpty": false,
+  "ackMessage": "",
+  "sendDelayMs": 300,
+  "questionTimeoutMs": 300000,
+  "consolePort": 3100,
+  "consoleToken": "",
+  "pricing": {
+    "models": {
+      "my-relay-model": {
+        "label": "我的中转模型",
+        "off": {
+          "cacheHit": 0.5,
+          "cacheMiss": 3,
+          "output": 9
+        }
+      }
+    }
+  },
+  "security": {
+    "interceptNotify": true
+  },
+  "slang": {
+    "enabled": true,
+    "extractMinMessages": 10,
+    "extractCooldownMs": 300000,
+    "inferenceThresholds": [
+      2,
+      4,
+      8
+    ],
+    "injectMax": 8,
+    "learnerPreset": "qq-chat",
+    "workspaceTitle": "QQ 黑话学习",
+    "autoResearch": true
+  },
+  "social": {
+    "enabled": true,
+    "maxReplyChars": 500,
+    "mustReplyKeywords": [
+      "deepseek",
+      "小鲸鱼",
+      "大肥鱼",
+      "鲸鱼",
+      "d指导",
+      "在吗"
+    ],
+    "contextWindow": 20,
+    "triggerProbability": 0.1,
+    "activeCheckMinMs": 8000,
+    "activeCheckMaxMs": 30000,
+    "idleWindowMs": 360000,
+    "idleRetryProbability": 0.4,
+    "proactiveEnabled": true,
+    "proactiveIdleThresholdMs": 1800000,
+    "proactiveCheckMinMs": 2700000,
+    "proactiveCheckMaxMs": 5400000,
+    "proactiveProbability": 0.2,
+    "activeReplyDelayMinMs": 1000,
+    "activeReplyDelayMaxMs": 5000,
+    "activeDurationEnabled": true,
+    "activeDurationMinMs": 1200000,
+    "activeDurationMaxMs": 3000000,
+    "skipProbability": 0.05,
+    "surrenderProbability": 0,
+    "idleRetryWaitMs": 120000,
+    "burstEnabled": true,
+    "burstIntervalMinMs": 1000,
+    "burstIntervalMaxMs": 3000,
+    "longGapProbability": 0.2,
+    "longGapMinMs": 5000,
+    "longGapMaxMs": 10000
+  },
+  "socialV2": {
+    "enabled": true,
+    "autoReplyCheckMs": 15000,
+    "agentPreset": "qq-chat-v2",
+    "provideRecommendations": true,
+    "tools": {
+      "getPrompt": true,
+      "getUnread": true,
+      "getRecent": true,
+      "socialState": true,
+      "sendGroup": true,
+      "sendPrivate": true,
+      "reply": true,
+      "sendBurst": true,
+      "sendMessage": true,
+      "waitMessages": true,
+      "feedback": true,
+      "getMyRecent": true,
+      "getMessageDetail": true,
+      "getActiveMembers": true,
+      "setWakeConfig": true,
+      "markRead": true,
+      "memory": true,
+      "slangQuery": true,
+      "slangSubmit": true,
+      "getImages": true,
+      "getForwardMsg": true,
+      "sendPoke": true,
+      "listStickers": true,
+      "getStickerImage": true,
+      "sendSticker": true,
+      "setStickerRemark": true,
+      "stickerNote": true,
+      "collectSticker": true,
+      "getSelfImage": true,
+      "sendVoice": true,
+      "drawImage": true
+    },
+    "wake": {
+      "defaultMode": "diving",
+      "preSleepWaitEnabled": true,
+      "preSleepWaitMs": 70000,
+      "recommendedDefaultInfinite": true,
+      "sleepMinMs": 60000,
+      "sleepMaxMs": 0,
+      "recommendedSleepMinMs": 300000,
+      "recommendedSleepMaxMs": 7200000,
+      "recommendedProbability": 0.2,
+      "recommendedKeywords": [
+        "小鲸鱼",
+        "DeepSeek",
+        "deepseek",
+        "DS",
+        "D老师",
+        "d老师",
+        "D指导",
+        "d指导",
+        "D师傅",
+        "d师傅",
+        "深度求索",
+        "大肥鱼",
+        "鲸鱼",
+        "DeepSeek V3",
+        "DeepSeek R1",
+        "R1"
+      ],
+      "recommendedAtMention": true,
+      "recommendedNameMention": true,
+      "recommendedQuestion": true,
+      "recommendedPoke": true,
+      "recommendedHint": "如果你要潜水，推荐先调用 qq_wait_for_messages(timeoutMs=300000) 完成一次沉睡前观察：5 分钟内没人说话就可以设置下一次唤醒并沉睡；若期间有人发新消息，先查看 newMessages，判断不需要你参与可直接沉睡，若参与了则下次想睡需再等观察窗口。潜水时长推荐 5~120 分钟，普通消息概率 0.05；@/名字/关键词/提问唤醒建议保持开启。需要等特定某人/某几人时，可额外设置 triggers.speakerIds。",
+      "batchWindowMs": 12000,
+      "maxWakePerMinute": 1,
+      "maxWakePerHour": 30,
+      "noActionLimit": 3,
+      "maxWakeConfigReminders": 2
+    },
+    "send": {
+      "burstEnabled": true,
+      "burstMaxMessages": 8,
+      "burstIntervalMinMs": 1000,
+      "burstIntervalMaxMs": 3000,
+      "longGapProbability": 0.2,
+      "longGapMinMs": 5000,
+      "longGapMaxMs": 10000,
+      "maxSendPerMinute": 10,
+      "maxSendPerHour": 150,
+      "maxMessageChars": 600,
+      "maxGapMs": 10000,
+      "gapBaseMs": 800,
+      "gapPerCharMs": 20,
+      "recommendedHint": "单条消息不要用空格断句，中文短句用逗号/顿号或直接连写；分条时每条都要读起来完整，不要把同一句话拆到两条里；普通闲聊建议一次 1~3 条，条间 1~3 秒；讲故事/回忆可以 5~10 秒间隔；不要连续刷屏。",
+      "privateBurstMaxMessages": 20,
+      "privateMaxMessageChars": 150
+    },
+    "wait": {
+      "defaultMs": 30000,
+      "minMs": 5000,
+      "maxMs": 600000,
+      "defaultQuietMs": 8000,
+      "minQuietAfterNewMs": 10000
+    },
+    "sticker": {
+      "enabled": true,
+      "syncTtlMs": 60000,
+      "maxListCount": 100,
+      "includeInPrompt": true,
+      "promptMaxStickers": 8,
+      "collect": {
+        "enabled": true,
+        "maxPerMinute": 2,
+        "maxPerHour": 10,
+        "maxRemarkChars": 20
+      },
+      "groupAutoSendChance": 0.5
+    },
+    "voice": {
+      "enabled": true,
+      "dir": "audio",
+      "maxSeconds": 60,
+      "maxBytes": 20971520,
+      "maxPerMinute": 4,
+      "maxPerHour": 40,
+      "allowAbsolutePath": false,
+      "defaultVolume": 1,
+      "loudness": "normal",
+      "ffmpegPath": "",
+      "autoReadback": true,
+      "defaultVoice": "zh-CN-XiaoyiNeural",
+      "privateVoice": "zh-CN-XiaoxiaoNeural",
+      "groupVoice": "zh-CN-XiaoxiaoNeural",
+      "backend": "gptsovits",
+      "cloneRef": [],
+      "cloneSpeed": 0.9,
+      "gsvRef": "",
+      "gsvPromptText": "",
+      "gsvSpeed": 1.3,
+      "gsvAux": [],
+      "gsvTones": {},
+      "asrUrl": "http://127.0.0.1:9881",
+      "rvcModel": "feiyu-talk",
+      "singRvcModel": "feiyu",
+      "singEngine": "rvc"
+    },
+    "proactive": {
+      "enabled": true,
+      "checkIntervalMinMs": 300000,
+      "checkIntervalMaxMs": 600000,
+      "idleThresholdMs": 600000,
+      "probability": 0.85,
+      "nightProbabilityFactor": 0.35,
+      "privateIntervalMinMs": 1200000,
+      "privateIntervalMaxMs": 1800000,
+      "nightStartHour": 23,
+      "nightEndHour": 9
+    },
+    "feedback": {
+      "maxLength": 500,
+      "notifyOwnerOnError": false
+    },
+    "context": {
+      "maxChars": 980000,
+      "idleMs": 1200000,
+      "note": "上下文窗口 1M；超过 55 万 token（55%）且空闲 20 分钟 → 归档重置",
+      "maxHitTokens": 550000
+    },
+    "initialPromptMaxChars": 2000,
+    "media": {
+      "maxBytes": 8388608,
+      "maxPixels": 64000000,
+      "maxCount": 5
+    },
+    "imageGen": {
+      "enabled": true,
+      "apiKey": "",
+      "model": "qwen-image-3.0",
+      "maxPerDay": 20,
+      "allowFreeDraw": true,
+      "size": "1024*1024",
+      "slots": [
+        {
+          "name": "主用",
+          "model": "qwen-image-3.0",
+          "apiKey": ""
+        },
+        {
+          "name": "备用1",
+          "model": "",
+          "apiKey": ""
+        },
+        {
+          "name": "备用2",
+          "model": "",
+          "apiKey": ""
+        }
+      ],
+      "activeSlot": 1,
+      "models": {
+        "主用": {
+          "model": "qwen-image-3.0",
+          "apiKey": "YOUR_API_KEY"
+        }
+      },
+      "activeModel": "主用"
+    },
+    "blacklist": [],
+    "alerts": {
+      "enabled": true,
+      "notify": true,
+      "to": "private:YOUR_QQ",
+      "intervalMs": 120000
+    },
+    "mood": {
+      "fadeEnabled": true,
+      "minHoldMs": 1800000,
+      "checkIntervalMs": 1800000,
+      "fadeThreshold": 0.2,
+      "rates": {
+        "生气": 0.2,
+        "有点烦": 0.15,
+        "担心": 0.15,
+        "失落": 0.15,
+        "开心": 0.15,
+        "得意": 0.15,
+        "撒娇": 0.15,
+        "傲娇": 0.15,
+        "吃醋": 0.15
+      },
+      "note": "生气 3 小时归零（0.2/小时），其他 4 小时（0.15/小时）；最短保鲜 30 分钟"
+    },
+    "plugins": {},
+    "features": {
+      "qzone": {
+        "enabled": true
+      },
+      "learn": {
+        "enabled": true
+      },
+      "report": {
+        "enabled": true
+      },
+      "draw": {
+        "enabled": true
+      },
+      "sing": {
+        "enabled": true
+      },
+      "voice": {
+        "enabled": true
+      },
+      "persona": {
+        "enabled": true
+      }
+    },
+    "signature": {
+      "enabled": true,
+      "dailyLimit": 3
+    },
+    "toolFlags": {
+      "qq_send_poke": {
+        "enabled": true
+      }
+    },
+    "searchLimit": 6
+  },
+  "webSearch": {
+    "provider": "auto",
+    "apiKey": "",
+    "apiKeyEnv": "DEEPSEEK_API_KEY",
+    "baseURL": "",
+    "model": "deepseek-v4-flash",
+    "maxUses": 5,
+    "maxTokens": 4096,
+    "maxResults": 8,
+    "timeoutMs": 35000
+  },
+  "qzone": {
+    "ugcRight": 4,
+    "maxPerDay": 5,
+    "minGapMs": 3600000,
+    "maxCommentsPerPost": 5,
+    "minCommentGapMs": 300000,
+    "minReplyGapMs": 180000,
+    "enabled": true
+  },
+  "dailyReport": {
+    "enabled": true,
+    "hour": 7,
+    "to": "private:YOUR_QQ"
+  }
+}

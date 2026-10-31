@@ -1,0 +1,311 @@
+{
+  "generatedAt": "2026-10-31T09:20:28.668Z",
+  "count": 61,
+  "tools": [
+    {
+      "name": "diary_recent",
+      "label": "看最近几条日记",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "diary_write",
+      "label": "往日记里写一条",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "memory_search",
+      "label": "在长期记忆里搜关键词——每天的聊",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "mood_set",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "profile_get",
+      "label": "看某个群友的档案",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "profile_list",
+      "label": "看现在都有谁的档案",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "profile_save",
+      "label": "给某个群友或朋友记一条档案",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "qq_collect_sticker",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_download_image",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_active_members",
+      "label": "查看最近活跃成员列表",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_forward_msg",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_group_history",
+      "label": "获取指定群的最近消息历史",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_group_members",
+      "label": "列出指定群的成员列表",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_library_image",
+      "label": "查看图片库里的图——**能看到内",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_message_detail",
+      "label": "按 message_id / 本",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_message_images",
+      "label": "获取指定 QQ 消息中的图片/表",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_my_recent_messages",
+      "label": "查看自己最近发过的消息",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_prompt",
+      "label": "查看当前二代仿真模式的提示词/角",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_recent_messages",
+      "label": "查看指定会话的最近消息",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_self_image",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_sticker_image",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_get_unread_messages",
+      "label": "查看未读消息",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_list_groups",
+      "label": "列出机器人所在的全部 QQ 群",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_list_images",
+      "label": "查看“图片库”里有哪些图可以发",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_list_stickers",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_list_voices",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_mark_read",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_memory_append",
+      "label": "记录一条轻量记忆",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_memory_clear",
+      "label": "清空轻量记忆",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_memory_query",
+      "label": "查看当前会话的轻量记忆",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_memory_remove",
+      "label": "删除一条轻量记忆",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_reply",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_report_feedback",
+      "label": "向控制台/管理端反馈 AI 遇到",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_request_learning",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_burst",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_group_message",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_image",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_message",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_poke",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_private_message",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_sticker",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_send_voice",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_set_avatar",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_set_sticker_remark",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_set_wake_config",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_slang_query",
+      "label": "查看当前已确认的群聊黑话/梗/网",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_slang_submit",
+      "label": "把你在群里经常看到但不确定含义/",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_social_state",
+      "label": "查看指定会话的二代仿真状态",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_status",
+      "label": "查询 QQ 机器人登录状态与账号",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_sticker_note",
+      "label": "给一个收藏表情记录你自己的理解/",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qq_voice_confirm",
+      "label": "用户确认满意后调用",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "qq_voice_tune",
+      "label": "调她说话的音色参数",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "qq_wait_for_messages",
+      "label": "",
+      "file": "mcp-snowluma-safe.js"
+    },
+    {
+      "name": "qzone_comment",
+      "label": "在自己的说说下面补一条评论",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "role_append",
+      "label": "把管理员用暗号",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "snowluma_status",
+      "label": "检查 SnowLuma OneB",
+      "file": "mcp-host-server.js"
+    },
+    {
+      "name": "voice_say",
+      "label": "",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "voice_voices",
+      "label": "看有哪些可用的 TTS 音色",
+      "file": "mcp-diary.js"
+    },
+    {
+      "name": "web_fetch",
+      "label": "只读抓取 HTTP",
+      "file": "mcp-web-search-safe.js"
+    },
+    {
+      "name": "web_quota",
+      "label": "查看今天联网搜索还剩多少额度",
+      "file": "mcp-web-search-safe.js"
+    },
+    {
+      "name": "web_search",
+      "label": "",
+      "file": "mcp-web-search-safe.js"
+    }
+  ]
+}
