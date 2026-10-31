@@ -1,0 +1,65 @@
+# ── 依赖 ─────────────────────────────────────────────
+node_modules/
+.npm-cache/
+
+# ── 本地配置与凭据（绝不提交）────────────────────────
+config.json
+config.local.json
+.credentials*
+*.pem
+*.key
+.env
+state/
+console-token
+
+# ── 运行时数据（隐私）────────────────────────────────
+memory/
+data/
+audio/
+images/
+backup/
+backups/
+logs/
+*.log
+
+# ── 语音 / 模型 / 大文件 ─────────────────────────────
+voice/*/venv/
+voice/venv/
+voice/**/venv/
+voice/ref/
+voice/rvc/out/
+voice/rvc/in/
+voice/rvc/models/
+*.pth
+*.index
+*.wav
+*.mp3
+*.flac
+*.zip
+tools/ffmpeg/
+ffmpeg.exe
+
+# ── SnowLuma（第三方，不进仓库）───────────────────────
+SnowLuma/
+SnowLuma-*/
+
+# ── 备份/临时 ────────────────────────────────────────
+*.bak
+*.bak-*
+*.tmp
+_snowluma-catalog.json
+_*.py
+_backup-*/
+
+# ── 内部文档（不公开）────────────────────────────────
+docs/audits/
+docs/design/
+docs/legacy/
+docs/research/
+docs/PUBLISH_PLAN.md
+docs/SECURITY_AUDIT.md
+
+# ── 系统垃圾 ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
